@@ -16,4 +16,5 @@ const map = new mapboxgl.Map({
 // markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
 // new mapboxgl.Marker(markerDomEl).setLngLat([-74.009, 40.705]).addTo(map);
 
-buildMarker(activities, [-74.009, 40.705])
+const marker = buildMarker("activities", [-74.009, 40.705])
+marker.addTo(map)
